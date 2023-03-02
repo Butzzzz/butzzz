@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <link href="midtermm.css" rel="stylesheet">
+    <title>Midterm Project</title>
+
+    <script type="text/javascript">
+        var btn ='t';
+        function c()
+        {
+            var btn1 = document.getElementById('sub_btn');
+            if(btn=='t'){
+                btn1.value='Subscribed';
+                btn='f' ;
+
+            }else{
+                btn1.value='Subscribe';
+                btn='t' ;
+            }
+         }
+    </script>
+</head>
+<body>
+    <section class="section1">
+    <div class="main">
+
+            <video  autoplay loop muted plays-inline class="bgvid">
+                <source src="background/SakuraRiver.mp4" type="video/mp4">
+            </video>
+        <nav>
+            <img src="background/myweb.png" class="logo">
+            <ul>
+                <li> <a target="_top" style="--clr:rgb(240, 37, 71)" href="MTHome.html"><span>Home</span><i></i></a></li>
+                <li><a target="_top" style="--clr:rgb(240, 37, 71)" href="MTHobbies.html"><span>Hobbies</span><i></i></a></li>
+                <li><a target="_top" style="--clr:rgb(240, 37, 71)" href="MTContact.html"><span>Contact</span><i></i></a></li>
+            </ul>
+            <input type="button" value="Subscribe" id="sub_btn" onclick="c();"></input>
+        </nav>
+        
+            <section class="section2"></section>
+            <div class="content">
+                <h1>About Butzz</h1>
+                <a button class="button" href="MTExplore.html" style="vertical-align:middle;"><span>Explore</span></button></a>
+            </div>
+    </div>
+    </section>
+</body>
+</html>
